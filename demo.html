@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>jquery.inputReset</title>
+    <script src="javascripts/jquery.js"></script>
+    <script src="javascripts/jquery.inputReset.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        // This remembers the original default subject
+        $('#subject').setDefaultText();
+      });
+    </script>
+  </head>
+  <body>
+    <p>
+      <strong>Try changing the subject text, then clicking on the reset link.</strong>
+    </p>
+    <p>
+      Subject <input id="subject" value="I am the original subject." style="width: 500px"/>
+    </p>
+    <p>
+      <a href="#" onclick="$('#subject').resetDefaultText()">Click me to reset the default subject</a>
+    </p>
+  </body>
+</html>
